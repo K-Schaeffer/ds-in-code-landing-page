@@ -1,0 +1,28 @@
+.motion-section {
+  padding-top: var(--spacing-size-xxxl);
+  padding-bottom: var(--spacing-size-xxxl);
+  @media screen and (min-width: 1366px) {
+    padding-top: 201px;
+    padding-bottom: 208px;
+  }
+  &__text-1,
+  &__text-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1366px) {
+    &__text-1{
+      justify-content: flex-start;
+    }
+    &__text-2{
+      justify-content: flex-end;
+    }
+  }
+
+
+}
+svg{
+  max-width: 100%;
+  max-height: 100%;
+}

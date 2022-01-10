@@ -1,0 +1,35 @@
+.header {
+  color: red;
+  background: var(--neutral-surface-01);
+  &-content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: var(--spacing-size-xl);
+    height: 100vh;
+    dsc-typography[component=heading]{
+      padding-bottom: var(--spacing-size-xxxs);
+    }
+    dsc-radio-group{
+      padding-right: var(--spacing-size-sm);
+      padding-bottom: var(--spacing-size-xs);
+    }
+    @media screen and (min-width: 1366px) {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-top: 0;
+      height: auto;
+      .only-mobile{
+        display: none;
+      }
+      dsc-radio-group{
+        padding-bottom: 0;
+      }
+    }
+
+
+  }
+}

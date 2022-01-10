@@ -1,0 +1,56 @@
+.home-banner {
+  background: var(--neutral-surface-01);
+  &-content{
+    box-sizing: border-box;
+    height: 752px;
+    padding: var(--spacing-size-xl) 0 0;
+    @media screen and (min-width: 1366px) {
+      height: 830px;
+      padding: var(--spacing-size-xxxl) 0;
+    }
+    dsc-tag{
+      display: block;
+      padding-bottom: var(--spacing-size-xxxs);
+    }
+    dsc-typography[component=heading] {
+      max-width: 684px;
+      display: block;
+      margin-bottom: var(--spacing-size-sm);
+    }
+    dsc-typography[component=paragraph] {
+      max-width: 285px;
+      display: block;
+      @media screen and (min-width: 1366px) {
+        max-width: 330px;
+      }
+    }
+  }
+}
+
+.home-brand-bg {
+  background: var(--brand-color-pure);
+  &-content{
+    position: relative;
+    height: 245px;
+    @media screen and (min-width: 1366px) {
+      height: 380px;
+    }
+    .octagon-brand {
+      position: absolute;
+      right: -45px;
+      bottom: 162px;
+      @media screen and (min-width: 1366px) {
+        right: 0px;
+        bottom: 193px;
+      }
+    }
+    .arrow-svg {
+      position: absolute;
+      margin-top: 46px;
+      @media screen and (min-width: 1366px) {
+        margin-top: 114px;
+      }
+    }
+  }
+
+}

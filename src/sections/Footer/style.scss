@@ -1,0 +1,12 @@
+.section-footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: var(--neutral-surface-01);
+  height: 115px;
+  padding: var(--spacing-size-xxs);
+  box-sizing: border-box;
+  dsc-icon{
+    padding-right: 12px;
+  }
+}

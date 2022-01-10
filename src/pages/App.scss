@@ -1,0 +1,29 @@
+.App{
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.divider {
+  display: block;
+  height: 4px;
+  background: var(--neutral-elements-03);
+}
+
+
+@media screen and (min-width: 1366px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+     padding: 0;
+  }
+}

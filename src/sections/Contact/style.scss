@@ -1,0 +1,113 @@
+.section-contact {
+  position: relative;
+  padding-top: var(--spacing-size-xxl);
+  padding-bottom: var(--spacing-size-xxxl);
+  @media screen and (min-width: 1366px) {
+    padding-top: var(--spacing-size-xxxl);
+    padding-bottom: var(--spacing-size-giant);
+  }
+
+  .section-contact__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    dsc-icon{
+      margin: 0 auto;
+      padding-bottom: var(--spacing-size-xxs);
+      @media screen and (min-width: 1366px) {
+        padding-bottom: var(--spacing-size-xs);
+      }
+    }
+    dsc-typography[component=heading]{
+      padding-bottom: var(--spacing-size-xxxs);
+      @media screen and (min-width: 1366px) {
+        padding-bottom: var(--spacing-size-quarck);
+      }
+    }
+  }
+
+  .section-contact__form{
+    padding-top: var(--spacing-size-xs);
+    @media screen and (min-width: 1366px) {
+      padding-top: var(--spacing-size-xxl);
+    }
+    .container {
+      @media screen and (min-width: 1366px) {
+        padding-bottom: var(--spacing-size-xxs);
+        &:last-of-type{
+          padding-bottom: 0;
+        }
+      }
+      .col-span-12{
+        padding-bottom: var(--spacing-size-xxxs);
+        @media screen and (min-width: 1366px) {
+          padding-bottom: 0;
+        }
+      }
+    }
+    &--action {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: var(--spacing-size-xs);
+      @media screen and (min-width: 1366px) {
+        padding-top: var(--spacing-size-sm);
+      }
+    }
+  }
+}
+
+.section-feedback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--neutral-surface-pure);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+  dsc-typography[component=heading]{
+    padding-bottom: var(--spacing-size-xxxs) ;
+  }
+  dsc-typography[component=paragraph]{
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: var(--spacing-size-xl);
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

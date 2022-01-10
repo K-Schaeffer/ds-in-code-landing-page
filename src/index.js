@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
+import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from './ThemeContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider brand="marca-a" themeName="tema-1" mode="light">
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

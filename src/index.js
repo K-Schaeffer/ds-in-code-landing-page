@@ -7,7 +7,7 @@ import { ThemeProvider } from './ThemeContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider brand="marca-a" themeName="tema-1" mode="light">
+    <ThemeProvider brand="brand-a" themeName="theme-1" mode="dark">
       <App />
     </ThemeProvider>
   </React.StrictMode>,

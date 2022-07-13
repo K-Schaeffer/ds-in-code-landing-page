@@ -1,6 +1,6 @@
-import '@meiuca/dsc-design-system/dist/components/icon';
-import '@meiuca/dsc-design-system/dist/components/link';
-import iconGithub from '@meiuca/dsc-assets/dist/assets/icons/github';
+import 'ds-in-code-design-system/dist/components/icon';
+import 'ds-in-code-design-system/dist/components/link';
+import iconGithub from 'ds-in-code-assets/dist/assets/icons/github';
 import './style.scss'
 
 export default function AppFooter () {

@@ -15,7 +15,7 @@ function App() {
     <div
       className="App"
       brand={theme.brand}
-      theme='tema-1'
+      theme='theme-1'
       mode={theme.mode} >
       <AppHeader />
       <AppHomeBanner />

@@ -1,12 +1,11 @@
 {
   "name": "landing-page",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
-    "@meiuca/dsc-design-system-team": "^0.1.5",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "ds-in-code-design-system-team": "^0.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",

@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 /* eslint import/no-webpack-loader-syntax: off */
-import tema1light from '!!raw-loader!@meiuca/dsc-design-tokens/dist/css/marca-a/tema-1/light.css'
-import tema1dark from '!!raw-loader!@meiuca/dsc-design-tokens/dist/css/marca-a/tema-1/dark.css'
-import tema2light from '!!raw-loader!@meiuca/dsc-design-tokens/dist/css/marca-a/tema-2/light.css'
-import tema2dark from '!!raw-loader!@meiuca/dsc-design-tokens/dist/css/marca-a/tema-2/dark.css'
+import theme1light from '!!raw-loader!ds-in-code-design-tokens/dist/css/brand-a/theme-1/light.css'
+import theme1dark from '!!raw-loader!ds-in-code-design-tokens/dist/css/brand-a/theme-1/dark.css'
+import theme2light from '!!raw-loader!ds-in-code-design-tokens/dist/css/brand-a/theme-2/light.css'
+import theme2dark from '!!raw-loader!ds-in-code-design-tokens/dist/css/brand-a/theme-2/dark.css'
 
 export const ThemeContext = createContext()
 
@@ -31,15 +31,15 @@ export function ThemeProvider({
 
     themeStyle.innerHTML = '';
 
-    if(theme === 'tema-1'){
+    if(theme === 'theme-1'){
       (mode === 'dark')
-        ? themeStyle.appendChild(document.createTextNode(tema1dark))
-        : themeStyle.appendChild(document.createTextNode(tema1light));
+        ? themeStyle.appendChild(document.createTextNode(theme1dark))
+        : themeStyle.appendChild(document.createTextNode(theme1light));
     }
-    if (theme === 'tema-2')  {
+    if (theme === 'theme-2')  {
       (mode === 'dark')
-        ? themeStyle.appendChild(document.createTextNode(tema2dark))
-        : themeStyle.appendChild(document.createTextNode(tema2light));
+        ? themeStyle.appendChild(document.createTextNode(theme2dark))
+        : themeStyle.appendChild(document.createTextNode(theme2light));
     }
 
     setTheme({

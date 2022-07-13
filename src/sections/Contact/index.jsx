@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import '@meiuca/dsc-design-system/dist/components/icon';
-import '@meiuca/dsc-design-system/dist/components/typography';
-import '@meiuca/dsc-design-system/dist/components/input';
-import '@meiuca/dsc-design-system/dist/components/select';
-import '@meiuca/dsc-design-system/dist/components/textarea';
-import '@meiuca/dsc-design-system/dist/components/button';
-import iconShapes from '@meiuca/dsc-assets/dist/assets/icons/shapes';
+import 'ds-in-code-design-system/dist/components/icon';
+import 'ds-in-code-design-system/dist/components/typography';
+import 'ds-in-code-design-system/dist/components/input';
+import 'ds-in-code-design-system/dist/components/select';
+import 'ds-in-code-design-system/dist/components/textarea';
+import 'ds-in-code-design-system/dist/components/button';
+import iconShapes from 'ds-in-code-assets/dist/assets/icons/shapes';
 import './style.scss';
 
 import { ReactComponent as XisSVG } from './xis.svg'
@@ -26,7 +26,7 @@ export default function AppContact () {
 
   useEffect(() => {
     document.getElementById('send-button')
-      .addEventListener("dscClick", () => setLoading(true))
+      .addEventListener("dsc-click", () => setLoading(true))
   }, [])
 
   return (

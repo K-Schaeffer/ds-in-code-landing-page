@@ -1,9 +1,9 @@
-import '@meiuca/dsc-design-system/dist/components/header';
-import '@meiuca/dsc-design-system/dist/components/typography';
-import '@meiuca/dsc-design-system/dist/components/radio-group';
-import '@meiuca/dsc-design-system/dist/components/radio';
-import '@meiuca/dsc-design-system/dist/components/switch';
-import '@meiuca/dsc-design-system/dist/components/button';
+import 'ds-in-code-design-system/dist/components/header';
+import 'ds-in-code-design-system/dist/components/typography';
+import 'ds-in-code-design-system/dist/components/radio-group';
+import 'ds-in-code-design-system/dist/components/radio';
+import 'ds-in-code-design-system/dist/components/switch';
+import 'ds-in-code-design-system/dist/components/button';
 
 import './style.scss';
 import { useEffect, useState } from 'react';
@@ -14,15 +14,15 @@ export default function AppHeader () {
 
   const { theme, handleTheme } = useTheme()
   const [mode, setMode] = useState('light');
-  const [actualTheme, setActualTheme] = useState('tema-1');
+  const [actualTheme, setActualTheme] = useState('theme-1');
 
   useEffect(() => {
     document.getElementsByTagName('dsc-switch')[0]
-      .addEventListener("dscChange", (e) =>
+      .addEventListener("dsc-change", (e) =>
         setMode(!e.detail.checked ? 'light' : 'dark')
       )
     document.getElementsByTagName('dsc-radio-group')[0]
-      .addEventListener("dscChange", (e) =>
+      .addEventListener("dsc-change", (e) =>
         setActualTheme(e.detail.value)
       )
   }, [])
@@ -33,7 +33,7 @@ export default function AppHeader () {
       theme.brand,
       mode
     )
-  },[mode, actualTheme])
+  },[mode, actualTheme, handleTheme, theme.brand])
 
   return (
     <div className='header'>
@@ -46,18 +46,18 @@ export default function AppHeader () {
                 component="heading"
                 size="xs"
               >
-                Trocar tema da Landing Page
+                Trocar theme da Landing Page
               </dsc-typography>
               <dsc-radio-group>
                 <dsc-radio
-                  label="Tema 01"
-                  value="tema-1"
+                  label="theme 01"
+                  value="theme-1"
                   checked
                 ></dsc-radio>
 
                 <dsc-radio
-                  label="Tema 02"
-                  value="tema-2"
+                  label="theme 02"
+                  value="theme-2"
                 ></dsc-radio>
               </dsc-radio-group>
               <dsc-typography

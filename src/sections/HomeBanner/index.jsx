@@ -1,5 +1,5 @@
-import '@meiuca/dsc-design-system/dist/components/tag';
-import '@meiuca/dsc-design-system/dist/components/typography';
+import 'ds-in-code-design-system/dist/components/tag';
+import 'ds-in-code-design-system/dist/components/typography';
 import Arrow from '../../components/Arrow';
 import OctagonBrand from '../../components/OctagonBrand';
 import './home-banner.scss'

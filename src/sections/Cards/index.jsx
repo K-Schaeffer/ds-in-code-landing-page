@@ -1,7 +1,7 @@
-import '@meiuca/dsc-design-system/dist/components/icon';
-import '@meiuca/dsc-design-system/dist/components/typography';
-import { CardContent } from '@meiuca/dsc-design-system-team/dist/CardContent';
-import iconShapes from '@meiuca/dsc-assets/dist/assets/icons/shapes';
+import 'ds-in-code-design-system/dist/components/icon';
+import 'ds-in-code-design-system/dist/components/typography';
+import { CardContent } from 'ds-in-code-design-system-team/dist/CardContent';
+import iconShapes from 'ds-in-code-assets/dist/assets/icons/shapes';
 import './style.scss'
 
 export default function AppCards () {

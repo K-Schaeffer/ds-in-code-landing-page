@@ -1,6 +1,6 @@
 import RotationElement from "../../components/RotationElement";
 import  { ScrollRotate } from 'react-scroll-rotate';
-import '@meiuca/dsc-design-system/dist/components/typography';
+import 'ds-in-code-design-system/dist/components/typography';
 import './style.scss';
 
 export default function AppMotionSection () {
